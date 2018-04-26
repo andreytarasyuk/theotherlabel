@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img, fieldset, a img {
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div, input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.icon-facebook {
+  width: 0.46em;
+  height: 1em;
+  fill: initial;
+}
+
+.icon-instagram {
+  width: 1em;
+  height: 1em;
+  fill: initial;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #0f0f0f;
+}
+
+.inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  width: 166px;
+  display: inline-block;
+  font-size: 0;
+  float: left;
+}
+
+.header {
+  padding: 65px 0 80px;
+  *zoom: 1;
+}
+
+.header:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.header__content {
+  overflow: hidden;
+  padding: 0 80px 0 95px;
+}
+
+.header__meta {
+  font-size: 70px;
+  float: right;
+  max-width: 230px;
+  line-height: .765;
+}
+
+.header p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.social {
+  font-size: 0;
+  margin-top: 30px;
+}
+
+.social li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.social li:not(:last-child) {
+  margin-right: 13px;
+}
+
+.social li a {
+  width: 62px;
+  height: 62px;
+  display: block;
+  border: 1px solid #0f0f0f;
+  border-radius: 50%;
+  transition: background .3s linear;
+  text-align: center;
+  font-size: 0;
+}
+
+.social li a:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+}
+
+.social li a:hover {
+  background: #0f0f0f;
+}
+
+.social li a:hover .icon {
+  fill: #fff;
+}
+
+.social li .icon {
+  font-size: 32px;
+  vertical-align: middle;
+  fill: #0f0f0f;
+  transition: fill .3s linear;
+}
+
+.content__wrapper {
+  padding: 0 15px;
+}
+
+.block {
+  padding-top: 56.14%;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.block:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  background: linear-gradient(to bottom right, #1a1a1a 18%, #fff);
+}
+
+.block__youtube, .block__btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.block__btn {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: visibility .5s linear, opacity .5s linear;
+}
+
+.block__btn.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.btn {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: transparent;
+  text-align: center;
+  font-size: 0;
+}
+
+.btn:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 21%;
+  top: 21%;
+  right: 21%;
+  bottom: 21%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.btn__icon {
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+.items {
+  margin: 0 -15px 50px;
+  *zoom: 1;
+}
+
+.items:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.item {
+  width: 33.33%;
+  float: left;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.item__photo {
+  padding-top: 100%;
+  transition: filter .3s linear;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.item__photo:hover {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
+
+@media only screen and (max-width: 1023px){
+  .header__content{
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 850px){
+  .logo{
+    width: 83px;
+  }
+  .header{
+    padding: 25px 0;
+    text-align: center;
+  }
+  .header__content{
+    padding: 0 15px;
+  }
+  .header__meta{
+    font-size: 35px;
+    max-width: 115px;
+  }
+  .header p{
+    font-size: 14px;
+  }
+  .content__wrapper{
+    padding: 0;
+  }
+  .btn{
+    width: 200px;
+    height: 200px;
+  }
+  .items{
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 568px){
+  .header__content{
+    padding: 30px 0 0;
+    overflow: visible;
+    clear: both;
+  }
+  .block{
+    padding-top: 70%;
+  }
+  .items{
+    margin: 0 -8px;
+  }
+  .item{
+    width: 50%;
+    padding: 0 8px;
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .btn{
+    width: 100px;
+    height: 100px;
+  }
+  .btn__icon{
+    width: 25px;
+    margin-left: 8px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

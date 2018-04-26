@@ -1,0 +1,166 @@
+$headerK: 0.5
+.logo
+	width: 166px
+	display: inline-block
+	font-size: 0
+	float: left
+	+md
+		width: 166px*$headerK
+	+sm
+		// float: none
+
+.header
+	padding: 65px 0 80px
+	+clr
+	+md
+		padding: 25px 0
+		text-align: center
+	&__content
+		overflow: hidden
+		padding: 0 80px 0 95px
+		+lg
+			padding: 0 30px
+		+md
+			padding: 0 15px
+		+sm
+			padding: 30px 0 0
+			overflow: visible
+			clear: both
+	&__meta
+		font-size: 70px
+		float: right
+		max-width: 230px
+		line-height: .765
+		+md
+			font-size: 70px*$headerK
+			max-width: 230px*$headerK
+		+sm
+			// float: none
+			// margin: 20px auto
+	p
+		margin-bottom: 10px
+		line-height: 1.5
+		font-size: 20px
+		+md
+			font-size: 14px
+			
+		
+.social
+	font-size: 0
+	margin-top: 30px
+	li
+		display: inline-block
+		vertical-align: top
+		&:not(:last-child)
+			margin-right: 13px
+		a
+			width: 62px
+			height: 62px
+			display: block
+			border: 1px solid #0f0f0f
+			border-radius: 50%
+			transition: background .3s linear
+			+vertical
+			&:hover
+				background: #0f0f0f
+				.icon
+					fill: #fff
+		.icon
+			font-size: 32px
+			vertical-align: middle
+			fill: #0f0f0f
+			transition: fill .3s linear
+.content
+	&__wrapper
+		padding: 0 15px
+		+md
+			padding: 0
+.block
+	padding-top: 56.14%
+	position: relative
+	margin-bottom: 40px
+	+sm
+		padding-top: 70%
+	+sm
+	&:before
+		content: ""
+		position: absolute
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		opacity: 0.3
+		background: linear-gradient(to bottom right, #1a1a1a 18%, #fff)
+	&__youtube,
+	&__btn
+		position: absolute
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 100%
+	&__btn
+		+cover
+		transition: visibility .5s linear, opacity .5s linear
+		&.is-hidden
+			visibility: hidden
+			opacity: 0
+	
+.btn
+	width: 400px
+	height: 400px
+	border: 1px solid #fff
+	border-radius: 50%
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	background: transparent
+	+vertical
+	+md
+		width: 200px
+		height: 200px
+	+r(480)
+		width: 200px*0.5
+		height: 200px*0.5
+	&:after
+		content: ""
+		position: absolute
+		left: 21%
+		top: 21%
+		right: 21%
+		bottom: 21%
+		border-radius: 50%
+		border: 1px solid #fff
+			
+	&__icon
+		vertical-align: middle
+		margin-left: 16px
+		+r(480)
+			width: 50px*0.5
+			margin-left: 16px*0.5
+		
+.items
+	margin: 0 -15px 50px
+	+clr
+	+md
+		margin-bottom: 0
+	+sm
+		margin: 0 -8px 
+.item
+	width: 33.33%
+	float: left
+	padding: 0 15px
+	margin-bottom: 30px
+	+sm
+		width: 50%
+		padding: 0 8px
+		margin-bottom: 16px
+	&__photo
+		padding-top: 100%
+		transition: filter .3s linear
+		+gray
+		+cover
+		&:hover
+			+gray-zero
